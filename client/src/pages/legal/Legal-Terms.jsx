@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import './Legals.css';
+import './temp.css';
 
 const TermsOfService = () => (
   <motion.div className="legal-page" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>

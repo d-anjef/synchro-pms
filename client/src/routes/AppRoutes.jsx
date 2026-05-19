@@ -29,10 +29,10 @@ import Billing from '../pages/Billing';
 import Admin from '../pages/Admin';
 import NotFound from '../pages/NotFound';
 
-import TermsOfService from '../pages/legal/TermsOfService';
-import PrivacyPolicy from '../pages/legal/PrivacyPolicy';
-import RefundPolicy from '../pages/legal/RefundPolicy';
-import CookiePolicy from '../pages/legal/CookiePolicy';
+import TermsOfService from '../pages/legal/Legal-Terms';
+import PrivacyPolicy from '../pages/legal/Legal-Privacy';
+import RefundPolicy from '../pages/legal/Legal-Refund';
+import CookiePolicy from '../pages/legal/Legal-Cookies';
 
 
 const AppRoutes = () => (

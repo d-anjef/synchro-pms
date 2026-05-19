@@ -1,6 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { Toaster } from 'react-hot-toast';
+import { Analytics } from '@vercel/analytics/react';
 import { store } from './redux/store';
 import { AuthProvider } from './context/AuthContext';
 import { ThemeProvider } from './context/ThemeContext';
@@ -36,6 +37,7 @@ function App() {
             </SubscriptionProvider>
           </AuthProvider>
         </BrowserRouter>
+        <Analytics />
       </ThemeProvider>
     </Provider>
   );

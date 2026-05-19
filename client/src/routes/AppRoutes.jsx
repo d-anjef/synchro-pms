@@ -29,6 +29,12 @@ import Billing from '../pages/Billing';
 import Admin from '../pages/Admin';
 import NotFound from '../pages/NotFound';
 
+import TermsOfService from '../pages/legal/TermsOfService';
+import PrivacyPolicy from '../pages/legal/PrivacyPolicy';
+import RefundPolicy from '../pages/legal/RefundPolicy';
+import CookiePolicy from '../pages/legal/CookiePolicy';
+
+
 const AppRoutes = () => (
   <Routes>
     {/* Public Routes — with navbar/footer */}
@@ -64,6 +70,14 @@ const AppRoutes = () => (
       <Route path="goals" element={<Goals />} />
       <Route path="profile" element={<Profile />} />
       <Route path="billing" element={<Billing />} />
+      <Route element={<PublicLayout />}>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/pricing" element={<PricingPage />} />
+      <Route path="/terms" element={<TermsOfService />} />        {/* NEW */}
+      <Route path="/privacy" element={<PrivacyPolicy />} />       {/* NEW */}
+      <Route path="/refund-policy" element={<RefundPolicy />} />  {/* NEW */}
+     <Route path="/cookie-policy" element={<CookiePolicy />} />  {/* NEW */}
+</Route>
       <Route
         path="admin"
         element={

@@ -50,6 +50,13 @@ const Footer = () => (
           <a href="#">Security</a>
           <a href="#">Cookies</a>
         </div>
+        <div className="public-footer-col">
+  <h4>Legal</h4>
+  <Link to="/privacy">Privacy Policy</Link>
+  <Link to="/terms">Terms of Service</Link>
+  <Link to="/refund-policy">Refund Policy</Link>
+  <Link to="/cookie-policy">Cookie Policy</Link>
+</div>
       </div>
 
       <div className="public-footer-bottom">

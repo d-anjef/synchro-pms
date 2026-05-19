@@ -1,0 +1,125 @@
+.profile-page {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.profile-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.profile-tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--border-primary);
+  margin-bottom: 24px;
+}
+.profile-tabs button {
+  padding: 10px 16px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  position: relative;
+}
+.profile-tabs button.active {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.profile-tabs button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-primary);
+}
+
+.profile-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+.profile-avatar-row {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.profile-avatar-wrapper {
+  position: relative;
+}
+
+.profile-avatar-upload {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  color: var(--text-inverse);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--bg-card);
+  transition: transform var(--transition-fast);
+}
+.profile-avatar-upload:hover {
+  transform: scale(1.05);
+}
+
+.profile-avatar-row h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.profile-role-pill {
+  display: inline-block;
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 11.5px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.profile-info-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--text-tertiary);
+}
+.profile-info-row span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 600px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .profile-avatar-row { flex-direction: column; text-align: center; }
+}

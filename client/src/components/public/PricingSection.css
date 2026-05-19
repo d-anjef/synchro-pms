@@ -1,0 +1,217 @@
+.pricing-section {
+  padding: 100px 0;
+  background: var(--bg-secondary);
+}
+.pricing-section.standalone {
+  background: transparent;
+  padding: 40px 0 80px;
+}
+
+.pricing-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pricing-header h2 {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -1.2px;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  line-height: 1.15;
+}
+
+.pricing-header p {
+  font-size: 16px;
+  color: var(--text-tertiary);
+  margin-bottom: 32px;
+}
+
+.pricing-toggle {
+  display: inline-flex;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-full);
+  padding: 4px;
+  gap: 4px;
+}
+.pricing-toggle button {
+  padding: 8px 20px;
+  font-size: 13.5px;
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  color: var(--text-tertiary);
+  transition: all var(--transition-fast);
+  position: relative;
+}
+.pricing-toggle button.active {
+  background: var(--accent-primary);
+  color: var(--text-inverse);
+  font-weight: 600;
+}
+
+.pricing-toggle-save {
+  background: #22c55e;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: var(--radius-full);
+  margin-left: 6px;
+  font-weight: 700;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.pricing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-base);
+}
+.pricing-card:hover {
+  box-shadow: var(--shadow-md);
+}
+.pricing-card.popular {
+  border-color: var(--accent-primary);
+  border-width: 2px;
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+.pricing-card-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--accent-primary);
+  color: var(--text-inverse);
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pricing-card-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.pricing-card-price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.pricing-card-amount {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -1.5px;
+}
+
+.pricing-card-period {
+  font-size: 14px;
+  color: var(--text-tertiary);
+}
+
+.pricing-card-billed {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  margin-top: 2px;
+}
+
+.pricing-card-features {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.pricing-card-feature {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.pricing-card-feature svg {
+  color: #22c55e;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+@media (max-width: 1100px) {
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-card.popular { transform: none; }
+}
+@media (max-width: 580px) {
+  .pricing-section { padding: 60px 0; }
+  .pricing-header h2 { font-size: 32px; }
+  .pricing-grid { grid-template-columns: 1fr; }
+}
+
+.pricing-trust {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border-primary);
+}
+
+.pricing-trust-label {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.pricing-trust-logos {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.pricing-trust-badge {
+  padding: 10px 24px;
+  background: #60bb46;
+  color: white;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.pricing-trust-badge.khalti {
+  background: #5c2d91;
+}

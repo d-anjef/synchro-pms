@@ -1,0 +1,33 @@
+.trial-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #6366f1 0%, #ec4899 100%);
+  color: white;
+  padding: 10px 24px;
+  font-size: 13.5px;
+}
+.trial-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  justify-content: center;
+}
+.trial-banner-cta {
+  background: white;
+  color: var(--accent-primary);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 8px;
+  transition: opacity var(--transition-fast);
+}
+.trial-banner-cta:hover { opacity: 0.9; }
+.trial-banner-close {
+  color: white;
+  opacity: 0.8;
+  padding: 4px;
+}
+.trial-banner-close:hover { opacity: 1; }

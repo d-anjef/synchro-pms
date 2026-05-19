@@ -1,0 +1,37 @@
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.status-badge-icon {
+  font-size: 11px;
+  display: inline-flex;
+}
+
+.status-badge-count {
+  font-weight: 600;
+  opacity: 0.7;
+  margin-left: 4px;
+}
+
+.status-todo {
+  background: var(--status-todo-bg);
+  color: var(--status-todo-text);
+}
+.status-in_progress {
+  background: var(--status-progress-bg);
+  color: var(--status-progress-text);
+}
+.status-in_review {
+  background: var(--status-review-bg);
+  color: var(--status-review-text);
+}
+.status-completed {
+  background: var(--status-completed-bg);
+  color: var(--status-completed-text);
+}

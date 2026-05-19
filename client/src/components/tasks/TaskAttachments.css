@@ -1,0 +1,124 @@
+.task-attachments {
+  margin-top: 24px;
+}
+
+.task-attachments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-attachments-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+}
+
+.task-attachments-download {
+  font-size: 12.5px;
+  color: var(--accent-primary);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.task-attachments-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.task-attachment-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+  min-width: 230px;
+  position: relative;
+}
+.task-attachment-item:hover {
+  border-color: var(--text-muted);
+}
+
+.task-attachment-icon {
+  width: 32px;
+  height: 32px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+  flex-shrink: 0;
+}
+
+.task-attachment-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+
+.task-attachment-name {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 160px;
+}
+
+.task-attachment-meta {
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+.task-attachment-meta a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+}
+
+.task-attachment-remove {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--text-muted);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+.task-attachment-item:hover .task-attachment-remove {
+  opacity: 1;
+}
+.task-attachment-remove:hover {
+  background: var(--bg-hover);
+  color: var(--danger);
+}
+
+.task-attachment-add {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background: var(--bg-tertiary);
+  border: 1px dashed var(--border-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+  transition: all var(--transition-fast);
+}
+.task-attachment-add:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+  border-style: solid;
+}

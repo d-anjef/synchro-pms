@@ -1,0 +1,70 @@
+.inbox-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.inbox-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.inbox-header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.inbox-header p {
+  font-size: 13.5px;
+  color: var(--text-tertiary);
+}
+
+.inbox-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.inbox-tab {
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  position: relative;
+  transition: color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.inbox-tab:hover { color: var(--text-primary); }
+.inbox-tab.active {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.inbox-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-primary);
+}
+
+.inbox-tab-count {
+  background: var(--accent-primary);
+  color: var(--text-inverse);
+  padding: 1px 7px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+}
+
+.inbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

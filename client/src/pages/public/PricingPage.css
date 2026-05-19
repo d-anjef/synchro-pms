@@ -1,0 +1,24 @@
+.pricing-page-hero {
+  padding: 80px 24px 0;
+  text-align: center;
+}
+.pricing-page-hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.pricing-page-hero h1 {
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  color: var(--text-primary);
+  margin: 16px 0;
+  line-height: 1.1;
+}
+.pricing-page-hero p {
+  font-size: 17px;
+  color: var(--text-tertiary);
+  line-height: 1.6;
+}
+@media (max-width: 580px) {
+  .pricing-page-hero h1 { font-size: 36px; }
+}

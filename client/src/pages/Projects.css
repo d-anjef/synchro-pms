@@ -1,0 +1,51 @@
+.projects-page {
+  width: 100%;
+}
+
+.projects-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.projects-header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.projects-header p {
+  font-size: 13.5px;
+  color: var(--text-tertiary);
+}
+
+.projects-toolbar {
+  margin-bottom: 24px;
+}
+
+.projects-search {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-md);
+  padding: 8px 14px;
+  width: 100%;
+  max-width: 360px;
+}
+.projects-search svg { color: var(--text-muted); }
+.projects-search input {
+  flex: 1;
+  font-size: 13.5px;
+  color: var(--text-primary);
+}
+.projects-search input::placeholder { color: var(--text-muted); }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}

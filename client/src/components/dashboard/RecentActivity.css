@@ -1,0 +1,40 @@
+.recent-activity {
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+.recent-activity-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.recent-activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.recent-activity-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.recent-activity-text {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.recent-activity-time {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
